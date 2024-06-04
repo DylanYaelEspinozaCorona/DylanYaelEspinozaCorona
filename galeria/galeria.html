@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"href="styles.css">
+    <title>Galería de Band Maid, Babymetal, Atarashi Gakko</title>
+</head>
+<body>
+    <div class="fs">
+        <center>GALERIA DE FOTOS DE BAND MAID, BABYMETAL, ATARASHII GAKKO</center>
+    </div>
+    
+    <center>
+        <img src="img/i1.png" id="i1"><br>
+        <img src="img/i2.jpeg" id="i2"><br>
+        <img src="img/i3.jpeg" id="i3"><br>
+        <img src="img/i4.jpeg" id="i4"><br>
+        <img src="img/i5.jpeg" id="i5"><br>
+        <img src="img/i6.jpeg" id="i6"><br>
+        <img src="img/i7.jpeg" id="i7"><br>
+        <img src="img/i8.jpeg" id="i8"><br>
+        <img src="img/i9.jpeg" id="i9"><br>
+        <img src="img/i10.jpeg" id="i10"><br>
+        <img src="img/i11.jpeg" id="i11"><br>
+        <img src="img/i12.jpeg" id="i12"><br>
+        <img src="img/i13.jpeg" id="i13"><br>
+        <img src="img/i14.jpeg" id="i14"><br>
+        <img src="img/i15.jpeg" id="i15"><br>
+    </center>
+    
+    <script type="text/javascript">
+        var originalSrc = [];
+        var images = [];
+        for (var i = 1; i <= 15; i++) {
+            var img = document.getElementById('i' + i);
+            images.push(img);
+            originalSrc.push(img.src); 
+            img.ondblclick = function() {
+                var index = images.indexOf(this);
+                this.src = 'img/i' + (index + 16) + '.jpeg';
+            };
+            img.onclick = function() {
+                var index = images.indexOf(this);
+                this.src = originalSrc[index]; 
+            };
+        }
+    </script>
+</body>
+</html>

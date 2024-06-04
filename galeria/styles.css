@@ -1,0 +1,30 @@
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ff00ee69;
+            margin: 0;
+            padding: 0;
+        }
+        center {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+        }
+        img {
+            max-width: 200px;
+            margin: 10px;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+        img:hover {
+            transform: scale(1.1);
+        }
+.fs{
+    font-size:30px;
+    color:rgb(255, 0, 153);
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
